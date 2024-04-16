@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>306</x>
+      <y>624</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>SysAdmin
+--
+- id: Long
+- email: String 
+- password: String
+--
+
++ LogIn()
++ LogOut()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>120</y>
+      <w>126</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- id: Long 
+- firstName: String
+- lastName: String
+- phoneNumber: Int
+- email: String 
+- password: String
+--
++ logIn()
++ logOut()
++ addUser()
++ deleteUser()
++ modifyUser()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>354</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Employe
+--
+
+- departement: String
+- Service: String
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>498</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>AnnounceModerator
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>DocumentManager
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>246</y>
+      <w>168</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;260.0;50.0;260.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>270</y>
+      <w>264</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>582</y>
+      <w>168</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;30.0;260.0;30.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>270</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>138</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Post
+--
+- id: Long 
+- text: String
+- publishDate : DateTime
+- DateExp: DateTime 
+- picture: Image
+--
+
++ Publish()
++ Delete()
++ Update()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>474</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Announce
+--
+- id: Long 
+- picture: Image
+- place: Place
+--
+
++ addAnnounce()
++ modifyAnnounce()
++ deleteAnnounce()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>402</y>
+      <w>120</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= 1
+m2= *
+</panel_attributes>
+    <additional_attributes>180.0;10.0;180.0;20.0;180.0;10.0;180.0;60.0;10.0;60.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>624</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Announces
+--
+- id: Long 
+- text: String
+- publishDate : DateTime
+- expDate: DateTime 
+
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>402</y>
+      <w>150</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2= 1
+</panel_attributes>
+    <additional_attributes>230.0;120.0;230.0;60.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>582</y>
+      <w>168</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>260.0;70.0;260.0;30.0;10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>180</y>
+      <w>144</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>834</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Comment
+--
+-id : Long
+-text: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>876</x>
+      <y>180</y>
+      <w>48</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=*
+  
+  
+  
+  
+
+Have</panel_attributes>
+    <additional_attributes>10.0;20.0;60.0;20.0;60.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>42</y>
+      <w>114</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>474</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Poll
+--
+-id: Long 
+
+
+
+--
++ addPoll()
++ modifPoll)()
++ deletePoll()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>90</y>
+      <w>456</w>
+      <h>618</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>450.0;1000.0;740.0;1000.0;740.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>630</y>
+      <w>126</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>vote
+--
+- id: Long
+- choice: String
+- voteNumber: int
+--
+
++ vote()
++ changevote()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>582</y>
+      <w>18</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>78</x>
+      <y>84</y>
+      <w>474</w>
+      <h>636</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1
+</panel_attributes>
+    <additional_attributes>770.0;60.0;770.0;20.0;10.0;20.0;10.0;1030.0;380.0;1030.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>12</x>
+      <y>0</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>120</y>
+      <w>126</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+UserStatus
+--
+
+ Active
+ 
+ Offline
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>126</y>
+      <w>288</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;460.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>762</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DataType&gt;&gt;
+Image
+--
+
+- height: int
+- width: int
+- imageType: imageType
+- binaryContent: blob
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>762</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Image
+--
+
+ png 
+ svg
+ jpg
+ pdf
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>792</y>
+      <w>84</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>294</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Departement
+--
+- id: Long
+- name: String
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>228</y>
+      <w>288</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;180.0;460.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>372</x>
+      <y>216</y>
+      <w>144</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=*
+received messages</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>372</x>
+      <y>186</y>
+      <w>144</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=*
+sendMessages</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>150</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+- text: String 
+- creattionDate: DateTime
+- From User
+- To : User
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>588</y>
+      <w>24</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;20.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>474</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Poll
+--
+-id: Long 
+
+
+
+--
++ addPoll()
++ modifPoll)()
++ deletePoll()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>480</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Place
+--
+
+ Side 
+ Top
+ Cener</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
